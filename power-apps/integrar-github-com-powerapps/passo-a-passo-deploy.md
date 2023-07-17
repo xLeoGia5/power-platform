@@ -1,4 +1,4 @@
-# Como configurar o *Deploy* do *GitHub* com o *Power Apps*
+# Como configurar o *Deploy* do *GitHub* com o *Power Apps*.
 
 1. No *Power Apps* acesse o Aplicativo desejado.
    
@@ -41,14 +41,28 @@
   
    III. Preenchidas as informações do repositorio, sera requerida suas credenciais de acesso. ( Também à a opção de criar uma chave de acesso especifica para esse aplicativo, que sera colocada no lugar da senha, onde pode-se definir  quais arquivos a chave tera acesso e tempo de expiração da chave que em seu termino a integração tera que ser reconfigurada ).
 
-   * Para isso acesse as configurações da sua conta do GitHub va em ` Developer settings ` ( no final da barra de rolagem )
+   * Para isso acesse as configurações da sua conta do GitHub va em ` Developer settings ` ( no final da barra de rolagem ).
    * Acesse a aba ` Personal acess tokens ` .
    * Opção ` Tokens (classic) ` .
    * Depois em ` Generate new token `.
   
      ![key git](https://github.com/xLeoGia5/power-platform/assets/138023684/b5fdd08d-d329-4696-8aeb-003afcc84f1c)
 
+   * Nomeie e configure o tempo de permanencia de ativação da chave de acesso e as permissões que desejar ( A unica necessária é a de acesso ao repositorio que deseja fazer a integração ) .
+   * E clique em ` Generate token ` ( No final da barra de rolagem ).
+   * Copie a chave de acesso que foi gerada.
+  
+     ![key git2](https://github.com/xLeoGia5/power-platform/assets/138023684/870a9c5e-3ccf-48df-bd7f-aace3d5ee736)
+     
+
+   * E cole no lugar de onde seria sua senha, na hora de passar as credenciais do *GitHub* para o *PowerApps*.
+
+   * Pós isso clique em ` Entrar ` .
+  
+     ![login apps](https://github.com/xLeoGia5/power-platform/assets/138023684/62795508-2b58-4ebc-8671-deaff7424517)
 
   
+   * Se for a primeira vez que o processo for feito, o *PowerApps* vai identificar que o diretorio informado não existe na *Branch* desejada e vai perguntar se gostaria de criar um novo é só clicar em ` Sim ` .
 
-1. 
+
+1. Pronto agora o Aplicativo ja esta conectado com o repositório desejado do *GitHub* .
