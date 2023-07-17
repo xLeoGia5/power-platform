@@ -10,3 +10,13 @@ Screen1 As screen:
         Y: =40
         ZIndex: =1
 
+    Button1 As button:
+        Height: =70
+        OnSelect: =alsef
+        Size: =24
+        Text: ="Big Push"
+        Width: =280
+        X: =124
+        Y: =564
+        ZIndex: =2
+
