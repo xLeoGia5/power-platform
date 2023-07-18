@@ -74,7 +74,8 @@ Tela2 As screen:
 
     Icon3 As icon.Edit:
         Icon: =Icon.Edit
-        OnSelect: =Set(varEdit, !varEdit)
+        OnSelect: |-
+            =UpdateContext({varEdit: !varEdit})
         X: =508
         Y: =144
         ZIndex: =8

@@ -22,13 +22,21 @@ Tela1 As screen:
         Height: =264
         Size: =21
         Width: =572
-        X: =28
-        Y: =219
+        X: =40
+        Y: =832
         ZIndex: =3
 
     Icon2 As icon.Trash:
         Icon: =Icon.Trash
         X: =536
-        Y: =508
+        Y: =753
         ZIndex: =4
+
+    DatePicker1 As datepicker:
+        Height: =70
+        Size: =24
+        Width: =575
+        X: =40
+        Y: =202
+        ZIndex: =5
 
