@@ -10,30 +10,35 @@ Tela2 As screen:
         Y: =34
         ZIndex: =1
 
-    TextInput1_1 As text:
-        Default: ="Entrada de texto"
+    entrada2 As text:
+        Default: =varText
         DisplayMode: =DisplayMode.View
-        Height: =613
+        Height: =542
         Mode: =TextMode.MultiLine
         Size: =21
         Width: =560
         X: =40
-        Y: =126
+        Y: =243
         ZIndex: =2
 
-    TextInput2_1 As text:
-        Default: ="Entrada de texto"
-        Height: =170
+    entrada1 As text:
+        Default: =""
+        Height: =142
         Mode: =TextMode.MultiLine
         Size: =21
+        Visible: =varEdit
         Width: =560
         X: =40
-        Y: =766
+        Y: =808
         ZIndex: =3
 
-    Button1_1 As button:
-        Fill: =RGBA(152, 208, 70, 1)
+    botaoAdd As button:
+        Fill: =RGBA(54, 176, 75, 1)
         Height: =140
+        OnSelect: |+
+            =Set(varText, entrada1) ;
+            
+            
         Size: =30
         Text: ="Adicionar"
         Width: =239
@@ -41,7 +46,7 @@ Tela2 As screen:
         Y: =966
         ZIndex: =4
 
-    Button2_1 As button:
+    botaoDel As button:
         Fill: =RGBA(255, 0, 0, 1)
         Height: =140
         Size: =30
@@ -57,4 +62,26 @@ Tela2 As screen:
         X: =508
         Y: =40
         ZIndex: =6
+
+    TextInput2 As text:
+        Default: ="Nome da Tarefa"
+        Height: =77
+        Size: =21
+        Width: =444
+        X: =40
+        Y: =138
+        ZIndex: =7
+
+    Icon3 As icon.Edit:
+        Icon: =Icon.Edit
+        OnSelect: =Set(varEdit, true)
+        X: =508
+        Y: =144
+        ZIndex: =8
+
+    Icon4 As icon.Save:
+        Icon: =Icon.Save
+        X: =402
+        Y: =40
+        ZIndex: =9
 

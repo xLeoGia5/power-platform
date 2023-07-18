@@ -17,3 +17,18 @@ Tela1 As screen:
         Y: =40
         ZIndex: =2
 
+    TextInput1 As text:
+        Default: ="Arquivos"
+        Height: =264
+        Size: =21
+        Width: =572
+        X: =28
+        Y: =219
+        ZIndex: =3
+
+    Icon2 As icon.Trash:
+        Icon: =Icon.Trash
+        X: =536
+        Y: =508
+        ZIndex: =4
+
