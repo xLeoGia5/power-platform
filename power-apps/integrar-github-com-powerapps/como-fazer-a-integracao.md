@@ -2,7 +2,7 @@
 
 1. No *Power Apps* acesse o Aplicativo desejado.
    
-1. Na tela de edição do aplicativo clique em `configurações` na parte superior da tela (se estiver pelo navegador ela pode estar na aba `...`).
+1. Na tela de edição do aplicativo clique em `configurações` na parte superior da tela (Se estiver pelo navegador ela pode estar na aba `...`).
    
    ![config power apps](https://github.com/xLeoGia5/power-platform/assets/138023684/c482d505-889e-477e-bcd2-70d808221803)
    
@@ -18,7 +18,7 @@
    
    ![coonfig git](https://github.com/xLeoGia5/power-platform/assets/138023684/742e5b4b-e54c-4595-a89e-30162902a87d)
    
-   II. Clique em `Conectar` (onde serão requeridas as informações referentes ao repositório que se quer fazer a integração).
+   II. Clique em `Conectar` (Onde serão requeridas as informações referentes ao repositório que se quer fazer a integração).
    
       ![inf deploy](https://github.com/xLeoGia5/power-platform/assets/138023684/208e18dc-ea9e-4572-8ed3-5dbba3aefaa3)
    
@@ -28,20 +28,20 @@
   
    * Ramificação: A Branch (ramificação) em que se deseja fazer a integração.
   
-   * Nome do diretório: Nome que se deseja usar para o repositório.
+   * Nome do diretório: Nome que se deseja usar para o repositório. ( Caso queira que o diretorio seja criado dentro de outro diretorio devera colocar a informação da seguinte maneira ./nome-do-diretorio/nome-do-aplicativo ).
 
    `OBS: Pode-se usar o mesmo repositório dentro da mesma *Branch* para vários aplicativos diferentes.`
 
    III. Preenchidas as informações do repositório, serão requeridas suas credenciais de acesso. (Também há a opção de criar uma chave de acesso específica para esse aplicativo, que será colocada no lugar da senha, onde pode-se definir quais arquivos a chave terá acesso e tempo de expiração da chave, que, ao expirar, exigirá que a integração seja reconfigurada).
 
-   * Para isso, acesse as configurações da sua conta do GitHub, vá em `Developer settings` (no final da barra de rolagem).
+   * Para isso, acesse as configurações da sua conta do GitHub, vá em `Developer settings` (No final da barra de rolagem).
    * Acesse a aba `Personal access tokens`.
    * Opção `Tokens (classic)`.
    * Em seguida, clique em `Generate new token`.
   
      ![key git](https://github.com/xLeoGia5/power-platform/assets/138023684/b5fdd08d-d329-4696-8aeb-003afcc84f1c)
 
-   * Nomeie e configure o tempo de permanência de ativação da chave de acesso e as permissões que desejar (a única necessária é a de acesso ao repositório que deseja fazer a integração).
+   * Nomeie e configure o tempo de permanência de ativação da chave de acesso e as permissões que desejar (A única necessária é a de acesso ao repositório que deseja fazer a integração).
    * E clique em `Generate token` (no final da barra de rolagem).
    * Copie a chave de acesso gerada.
   
