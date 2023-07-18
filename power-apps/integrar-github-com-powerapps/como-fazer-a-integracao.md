@@ -28,7 +28,7 @@
   
    * Ramificação: A Branch (ramificação) em que se deseja fazer a integração.
   
-   * Nome do diretório: Nome que se deseja usar para o repositório. ( Caso queira que o diretorio seja criado dentro de outro diretorio devera colocar a informação da seguinte maneira ./nome-do-diretorio/nome-do-aplicativo ).
+   * Nome do diretório: Nome que se deseja usar para o repositório. ( Caso queira que o diretório seja criado dentro de outro diretório devera colocar a informação da seguinte maneira ./nome-do-diretorio/nome-do-aplicativo ).
 
    `OBS: Pode-se usar o mesmo repositório dentro da mesma *Branch* para vários aplicativos diferentes.`
 
