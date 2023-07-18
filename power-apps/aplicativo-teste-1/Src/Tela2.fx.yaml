@@ -100,9 +100,3 @@ Tela2 As screen:
         Y: =701
         ZIndex: =11
 
-    Icon8 As icon.Add:
-        Icon: =Icon.Add
-        X: =348
-        Y: =541
-        ZIndex: =12
-
