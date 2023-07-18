@@ -3,17 +3,21 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "Button1": 8,
-    "Button2": 9,
+    "Button1_1": 16,
+    "Button2_1": 17,
     "Host": 3,
-    "Label1": 5,
-    "Screen1": 4,
-    "TextInput1": 6,
-    "TextInput2": 7
+    "Icon1": 40,
+    "Icon1_1": 42,
+    "Label1_1": 13,
+    "Label1_2": 41,
+    "Tela1": 4,
+    "Tela2": 12,
+    "TextInput1_1": 14,
+    "TextInput2_1": 15
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/18/2023 15:34:59",
+  "HeaderLastSavedDateTimeUTC": "07/18/2023 19:28:01",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -21,47 +25,63 @@
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "CustomGallerySample": 0
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 2,
+    "button": 3,
+    "icon": 1,
     "label": 0,
-    "text": 1
+    "text": 2
   },
   "OverridablePropertiesEntry": {
     "App": {},
-    "Button1": {},
-    "Button2": {},
+    "Button1_1": {},
+    "Button2_1": {},
     "Host": {},
-    "Label1": {},
-    "Screen1": {},
-    "TextInput1": {},
-    "TextInput2": {}
+    "Icon1": {},
+    "Icon1_1": {},
+    "Label1_1": {},
+    "Label1_2": {},
+    "Tela1": {},
+    "Tela2": {},
+    "TextInput1_1": {},
+    "TextInput2_1": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
     "App": 0,
-    "Button1": 0,
-    "Button2": 0,
+    "Button1_1": 4,
+    "Button2_1": 5,
     "Host": 0,
-    "Label1": 0,
-    "Screen1": 0,
-    "TextInput1": 0,
-    "TextInput2": 0
+    "Icon1": 1,
+    "Icon1_1": 1,
+    "Label1_1": 0,
+    "Label1_2": 0,
+    "Tela1": 0,
+    "Tela2": 0,
+    "TextInput1_1": 2,
+    "TextInput2_1": 3
   },
-  "ResourcesJsonIndices": {},
+  "ResourcesJsonIndices": {
+    "Image-SampleImage": 0
+  },
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.0520065,
+    "AnalysisLoadTime": 0.0599349,
     "ControlCount": {
-      "label": 1,
-      "screen": 1
+      "button": 8,
+      "icon": 2,
+      "label": 5,
+      "screen": 4,
+      "text": 8
     },
-    "DeserializationLoadTime": 0.6003847
+    "DeserializationLoadTime": 1.6561278
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

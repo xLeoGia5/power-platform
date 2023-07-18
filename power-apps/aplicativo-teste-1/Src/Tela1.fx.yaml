@@ -1,0 +1,19 @@
+Tela1 As screen:
+    Fill: =RGBA(237, 237, 237, 1)
+
+    Label1_2 As label:
+        Height: =70
+        Size: =40
+        Text: ="App Teste 1"
+        Width: =560
+        X: =40
+        Y: =34
+        ZIndex: =1
+
+    Icon1_1 As icon.Waffle:
+        Color: =RGBA(77, 77, 77, 1)
+        Icon: =Icon.Waffle
+        X: =508
+        Y: =40
+        ZIndex: =2
+
