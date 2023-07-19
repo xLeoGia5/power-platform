@@ -2,35 +2,30 @@ Tela2 As screen:
     Fill: =RGBA(237, 237, 237, 1)
     OnHidden: =
 
-    Label1_1 As label:
-        Height: =70
-        Size: =40
-        Text: ="App Teste 1"
-        Width: =340
-        X: =40
-        Y: =34
-        ZIndex: =1
-
     entrada2 As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
         Default: =varOut
         DisplayMode: =DisplayMode.View
         Height: =545
         Mode: =TextMode.MultiLine
         Size: =21
-        Width: =560
-        X: =40
-        Y: =243
+        Width: =566
+        X: =34
+        Y: =228
         ZIndex: =2
 
     entrada1 As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
         Default: =varText
         Height: =142
         Mode: =TextMode.MultiLine
         Size: =21
         Visible: =varEdit
-        Width: =560
-        X: =40
-        Y: =788
+        Width: =566
+        X: =34
+        Y: =787
         ZIndex: =3
 
     botaoAdd As button:
@@ -44,8 +39,8 @@ Tela2 As screen:
         Size: =30
         Text: ="Adicionar"
         Visible: =varEdit
-        Width: =239
-        X: =40
+        Width: =279
+        X: =34
         Y: =966
         ZIndex: =4
 
@@ -63,33 +58,38 @@ Tela2 As screen:
         ZIndex: =5
 
     entrada3 As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
         Default: ="Tarefa"
         Height: =77
         OnChange: =Set(varTitulo, entrada3.Text)
         Size: =21
         Width: =444
-        X: =40
-        Y: =138
+        X: =34
+        Y: =137
         ZIndex: =7
 
     Icon3 As icon.Edit:
+        Color: =RGBA(26, 26, 26, 1)
         Icon: =Icon.Edit
         OnSelect: |-
             =UpdateContext({varEdit: !varEdit})
-        X: =508
+        X: =536
         Y: =144
         ZIndex: =8
 
     Icon4 As icon.Save:
+        Color: =RGBA(26, 26, 26, 1)
         Icon: =Icon.Save
-        X: =402
+        X: =430
         Y: =40
         ZIndex: =9
 
     Icon5 As icon.BackArrow:
+        Color: =RGBA(26, 26, 26, 1)
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(Tela1)
-        X: =508
+        X: =536
         Y: =40
         ZIndex: =10
 
@@ -97,7 +97,20 @@ Tela2 As screen:
         Color: =RGBA(0, 18, 107, 0.58)
         Height: =49
         OnSelect: =Set(varText, varOut)
-        X: =508
-        Y: =701
+        X: =524
+        Y: =706
         ZIndex: =11
+
+    Label1_3 As label:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
+        Color: =RGBA(26, 26, 26, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =100
+        Size: =40
+        Text: =" App Teste 1"
+        Width: =355
+        X: =34
+        Y: =22
+        ZIndex: =12
 

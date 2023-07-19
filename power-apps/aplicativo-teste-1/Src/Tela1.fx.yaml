@@ -2,41 +2,54 @@ Tela1 As screen:
     Fill: =RGBA(237, 237, 237, 1)
 
     Label1_2 As label:
-        Height: =70
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
+        Color: =RGBA(26, 26, 26, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =100
         Size: =40
-        Text: ="App Teste 1"
-        Width: =560
-        X: =40
-        Y: =34
+        Text: =" App Teste 1"
+        Width: =443
+        X: =34
+        Y: =22
         ZIndex: =1
 
     Icon1_1 As icon.Waffle:
-        Color: =RGBA(77, 77, 77, 1)
+        Color: =RGBA(26, 26, 26, 1)
         Icon: =Icon.Waffle
         X: =508
         Y: =40
         ZIndex: =2
 
     TextInput1 As text:
+        BorderColor: =RGBA(26, 26, 26, 1)
+        BorderThickness: =5
         Default: ="Arquivos"
         Height: =264
         Size: =21
-        Width: =572
-        X: =40
-        Y: =832
+        Width: =583
+        X: =34
+        Y: =817
         ZIndex: =3
 
     Icon2 As icon.Trash:
+        Color: =RGBA(26, 26, 26, 1)
         Icon: =Icon.Trash
         X: =536
-        Y: =753
+        Y: =728
         ZIndex: =4
 
-    DatePicker1 As datepicker:
-        Height: =70
-        Size: =24
-        Width: =575
-        X: =40
-        Y: =202
+    Label1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
+        Color: =RGBA(26, 26, 26, 1)
+        Fill: =RGBA(237, 237, 237, 1)
+        Height: =276
+        Size: =75
+        Text: =Now()
+        Width: =583
+        X: =34
+        Y: =199
         ZIndex: =5
 
