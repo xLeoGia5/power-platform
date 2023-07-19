@@ -3,28 +3,29 @@
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
     "App": 1,
-    "botaoAdd": 13,
-    "botaoDel": 14,
-    "entrada1": 12,
-    "entrada2": 10,
-    "entrada3": 8,
+    "botaoAdd": 19,
+    "botaoDel": 20,
+    "entrada1": 18,
+    "entrada2": 16,
+    "entrada3": 14,
     "Host": 3,
-    "Icon1_1": 18,
-    "Icon2": 20,
-    "Icon3": 9,
-    "Icon4": 6,
-    "Icon5": 7,
-    "Icon6": 11,
-    "Label1": 21,
-    "Label1_2": 16,
-    "Label1_3": 22,
-    "Tela1": 15,
-    "Tela2": 4,
-    "TextInput1": 19
+    "Icon1_1": 6,
+    "Icon2": 8,
+    "Icon3": 15,
+    "Icon4": 12,
+    "Icon5": 13,
+    "Icon6": 17,
+    "Label1": 7,
+    "Label1_2": 5,
+    "Rectangle1": 22,
+    "Tela1": 4,
+    "Tela2": 10,
+    "TextInput1": 9,
+    "Titulo": 11
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/19/2023 15:59:05",
+  "HeaderLastSavedDateTimeUTC": "07/19/2023 17:31:03",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -39,9 +40,10 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 3,
+    "button": 4,
     "icon": 1,
     "label": 0,
+    "rectangle": 3,
     "text": 2
   },
   "OverridablePropertiesEntry": {
@@ -60,10 +62,11 @@
     "Icon6": {},
     "Label1": {},
     "Label1_2": {},
-    "Label1_3": {},
+    "Rectangle1": {},
     "Tela1": {},
     "Tela2": {},
-    "TextInput1": {}
+    "TextInput1": {},
+    "Titulo": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
@@ -83,10 +86,11 @@
     "Icon6": 11,
     "Label1": 2,
     "Label1_2": 0,
-    "Label1_3": 5,
+    "Rectangle1": 0,
     "Tela1": 0,
     "Tela2": 0,
-    "TextInput1": 4
+    "TextInput1": 4,
+    "Titulo": 5
   },
   "ResourcesJsonIndices": {
     "Image-SampleImage": 0
@@ -94,16 +98,15 @@
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
-    "AnalysisLoadTime": 0.1188484,
+    "AnalysisLoadTime": 0.1184549,
     "ControlCount": {
       "button": 2,
-      "datepicker": 1,
       "icon": 6,
       "label": 3,
       "screen": 2,
       "text": 4
     },
-    "DeserializationLoadTime": 1.7671377
+    "DeserializationLoadTime": 1.4459947
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

@@ -60,9 +60,9 @@ Tela2 As screen:
     entrada3 As text:
         BorderColor: =RGBA(128, 128, 128, 1)
         BorderThickness: =5
-        Default: ="Tarefa"
+        Default: =varTitulo2
         Height: =77
-        OnChange: =Set(varTitulo, entrada3.Text)
+        OnChange: =If(entrada3.Text= "",Set(varTitulo, " Lista 1")&& Set(varTitulo2, " Titulo Lista 1"),Set(varTitulo, entrada3.Text))
         Size: =21
         Width: =444
         X: =34
@@ -101,16 +101,21 @@ Tela2 As screen:
         Y: =706
         ZIndex: =11
 
-    Label1_3 As label:
+    Titulo As label:
         BorderColor: =RGBA(128, 128, 128, 1)
         BorderThickness: =5
         Color: =RGBA(26, 26, 26, 1)
         FontWeight: =FontWeight.Bold
         Height: =100
         Size: =40
-        Text: =" App Teste 1"
+        Text: =varTitulo
         Width: =355
         X: =34
         Y: =22
         ZIndex: =12
+
+    Rectangle1 As rectangle:
+        X: =264
+        Y: =364
+        ZIndex: =13
 
