@@ -114,8 +114,3 @@ Tela2 As screen:
         Y: =22
         ZIndex: =12
 
-    Rectangle1 As rectangle:
-        X: =264
-        Y: =364
-        ZIndex: =13
-

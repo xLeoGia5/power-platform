@@ -21,22 +21,24 @@ Tela1 As screen:
         Y: =40
         ZIndex: =2
 
-    TextInput1 As text:
+    caixaMsg As text:
         BorderColor: =RGBA(26, 26, 26, 1)
         BorderThickness: =5
-        Default: ="Arquivos"
+        Default: =varMsg
         Height: =264
+        OnChange: |
+            =UpdateContext({varDell: false});
+            If(caixaMsg.Text=""&&varDell=false,UpdateContext({varMsg: " Mensagem Rapida..."}))
         Size: =21
         Width: =583
         X: =34
-        Y: =817
+        Y: =779
         ZIndex: =3
 
     Icon2 As icon.Trash:
         Color: =RGBA(26, 26, 26, 1)
         Icon: =Icon.Trash
-        X: =536
-        Y: =728
+        Y: =433
         ZIndex: =4
 
     Label1 As label:
@@ -50,6 +52,27 @@ Tela1 As screen:
         Text: =Now()
         Width: =583
         X: =34
-        Y: =199
+        Y: =142
         ZIndex: =5
+
+    Icon1 As icon.ArrowLeft:
+        Icon: =Icon.ArrowLeft
+        OnSelect: |-
+            =UpdateContext({varMsg: ""});
+            UpdateContext({varDell: true})
+        X: =536
+        Y: =1055
+        ZIndex: =6
+
+    DataTable1 As dataTable.datatable:
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =243
+        Size: =21
+        Width: =630
+        X: =10
+        Y: =503
+        ZIndex: =7
 
