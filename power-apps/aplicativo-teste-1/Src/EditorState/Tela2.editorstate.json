@@ -640,7 +640,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "OnChange",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "OnChange",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "OnSelect"
       ],
       "HasDynamicProperties": false,
