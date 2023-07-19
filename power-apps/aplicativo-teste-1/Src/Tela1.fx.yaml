@@ -28,6 +28,7 @@ Tela1 As screen:
         BorderThickness: =5
         Default: =varMsg
         Height: =630
+        Mode: =TextMode.MultiLine
         OnChange: |
             =UpdateContext({varDell: false});
             If(caixaMsg.Text=""&&varDell=false,UpdateContext({varMsg: " Anotação Rapida..."}))

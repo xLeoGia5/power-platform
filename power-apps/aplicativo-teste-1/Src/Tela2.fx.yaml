@@ -22,7 +22,7 @@ Tela2 As screen:
         Height: =142
         Mode: =TextMode.MultiLine
         OnChange: |-
-            =If(varText="",UpdateContext({varText:" anotação..."}))
+            =If(entrada1.Text="",UpdateContext({varText:" anotação..."}))
         Size: =21
         Visible: =varEdit
         Width: =566
@@ -76,7 +76,8 @@ Tela2 As screen:
         Color: =RGBA(26, 26, 26, 1)
         Icon: =Icon.Edit
         OnSelect: |-
-            =UpdateContext({varEdit: !varEdit})
+            =UpdateContext({varEdit: !varEdit});
+            If(varText="",UpdateContext({varText:" anotação..."}), UpdateContext({varText:entrada1.Text}))
         X: =536
         Y: =144
         ZIndex: =8
