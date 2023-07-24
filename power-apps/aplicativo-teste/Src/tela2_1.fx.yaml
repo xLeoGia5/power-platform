@@ -1,17 +1,16 @@
-tela2 As screen:
+tela2_1 As screen:
     Fill: =RGBA(237, 237, 237, 1)
-    OnVisible: =
 
-    entrada1 As text:
+    entrada1_1 As text:
         BorderColor: =RGBA(128, 128, 128, 1)
         BorderThickness: =5
         Default: =varIn
         Height: =159
         Mode: =TextMode.MultiLine
         OnChange: |-
-            =If(entrada1.Text="",UpdateContext({varIn: " Escreva Aqui..."}))
+            =If(entrada1_1.Text="",UpdateContext({varIn: " Escreva Aqui..."}))
         OnSelect: |-
-            =If(entrada1.Text= " Escreva Aqui...", UpdateContext({varIn: ""}))
+            =If(entrada1_1.Text= " Escreva Aqui...", UpdateContext({varIn: ""}))
         Size: =21
         Visible: =varEdit
         Width: =560
@@ -19,7 +18,7 @@ tela2 As screen:
         Y: =855
         ZIndex: =1
 
-    Saida1 As text:
+    Saida1_1 As text:
         Default: =varOut
         DisplayMode: =DisplayMode.View
         Height: =609
@@ -30,11 +29,11 @@ tela2 As screen:
         Y: =226
         ZIndex: =2
 
-    Adicionar As button:
+    Adicionar_1 As button:
         Fill: =RGBA(54, 176, 75, 1)
         Height: =70
         OnSelect: |-
-            =If(varIn<> " Escreva Aqui...",UpdateContext({varOut:Concatenate(varOut,entrada1.Text,"
+            =If(varIn<> " Escreva Aqui...",UpdateContext({varOut:Concatenate(varOut,entrada1_1.Text,"
             ")}))
         Size: =24
         Text: ="Adicionar"
@@ -44,7 +43,7 @@ tela2 As screen:
         Y: =1035
         ZIndex: =3
 
-    Deletar As button:
+    Deletar_1 As button:
         Fill: =RGBA(255, 0, 0, 1)
         Height: =70
         OnSelect: |-
@@ -57,16 +56,16 @@ tela2 As screen:
         Y: =1035
         ZIndex: =4
 
-    seta1 As icon.ArrowDown:
+    seta1_1 As icon.ArrowDown:
         Color: =RGBA(128, 128, 128, 0.53)
         OnSelect: |-
-            =UpdateContext({varIn:Saida1.Text})
+            =UpdateContext({varIn:Saida1_1.Text})
         Visible: =varEdit
         X: =510
         Y: =747
         ZIndex: =5
 
-    apagarEntrada1 As icon.ArrowLeft:
+    apagarEntrada1_1 As icon.ArrowLeft:
         Color: =RGBA(128, 128, 128, 0.55)
         Height: =45
         Icon: =Icon.ArrowLeft
@@ -78,22 +77,22 @@ tela2 As screen:
         Y: =953
         ZIndex: =6
 
-    entrada2 As text:
+    entrada2_1 As text:
         BorderColor: =RGBA(128, 128, 128, 1)
         BorderThickness: =5
         Default: =varIn2
         Height: =70
         OnChange: |-
-            =If(entrada2.Text="",UpdateContext({varTitulo: " Lista 1."})&& UpdateContext({varIn2: " Titulo aqui..."})&& Set(t2, " Lista 1"),UpdateContext({varTitulo:entrada2.Text}), UpdateContext({varIn2: entrada2.Text})&& Set(t2, varIn2))
+            =If(entrada2_1.Text="",UpdateContext({varTitulo: " Lista 2."})&& UpdateContext({varIn2: " Titulo aqui..."})&& Set(t2_1, " Lista 2"),UpdateContext({varTitulo:entrada2_1.Text}), UpdateContext({varIn2: entrada2_1.Text})&& Set(t2_1, varIn2))
         OnSelect: |-
-            =If(entrada2.Text= " Titulo aqui...", UpdateContext({varIn2: ""}))
+            =If(entrada2_1.Text= " Titulo aqui...", UpdateContext({varIn2: ""}))
         Size: =21
         Width: =436
         X: =36
         Y: =136
         ZIndex: =7
 
-    titulo1 As label:
+    titulo1_1 As label:
         BorderColor: =RGBA(128, 128, 128, 1)
         BorderThickness: =5
         Height: =70
@@ -104,7 +103,7 @@ tela2 As screen:
         Y: =40
         ZIndex: =8
 
-    celndario As icon.Calendar:
+    celndario_1 As icon.Calendar:
         Color: =RGBA(128, 128, 128, 0.54)
         Icon: =Icon.AddToCalendar
         OnSelect: |-
@@ -114,7 +113,7 @@ tela2 As screen:
         Y: =245
         ZIndex: =9
 
-    calendario2 As datepicker:
+    calendario2_1 As datepicker:
         EndYear: =2025
         Height: =70
         Size: =24
@@ -125,7 +124,7 @@ tela2 As screen:
         Y: =322
         ZIndex: =10
 
-    editar As icon.Edit:
+    editar_1 As icon.Edit:
         Color: =RGBA(128, 128, 128, 1)
         Icon: =Icon.Edit
         OnSelect: |-
@@ -134,7 +133,7 @@ tela2 As screen:
         Y: =136
         ZIndex: =11
 
-    Icon5 As icon.BackArrow:
+    Icon5_1 As icon.BackArrow:
         Color: =RGBA(128, 128, 128, 1)
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(tela1)

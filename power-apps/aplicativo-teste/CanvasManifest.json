@@ -97,7 +97,7 @@
       "zeroalltabindexes": true
     },
     "Author": "",
-    "BindingErrorCount": 4,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "Phone",
@@ -132,6 +132,8 @@
   },
   "ScreenOrder": [
     "tela1",
-    "tela2"
+    "tela2",
+    "tela2_1",
+    "tela2_2"
   ]
 }

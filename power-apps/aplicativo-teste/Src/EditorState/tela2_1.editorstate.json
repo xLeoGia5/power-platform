@@ -1,6 +1,6 @@
 {
   "ControlStates": {
-    "Adicionar": {
+    "Adicionar_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -78,7 +78,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Adicionar",
+      "Name": "Adicionar_1",
       "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -271,7 +271,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "apagarEntrada1": {
+    "apagarEntrada1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -330,7 +330,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "apagarEntrada1",
+      "Name": "apagarEntrada1_1",
       "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -463,7 +463,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "calendario2": {
+    "calendario2_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "DefaultDate",
@@ -542,7 +542,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "calendario2",
+      "Name": "calendario2_1",
       "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -775,7 +775,7 @@
       "StyleName": "defaultDatePickerStyle",
       "Type": "ControlInfo"
     },
-    "celndario": {
+    "celndario_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -834,7 +834,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "celndario",
+      "Name": "celndario_1",
       "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -967,7 +967,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "Deletar": {
+    "Deletar_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1045,7 +1045,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Deletar",
+      "Name": "Deletar_1",
       "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1238,7 +1238,7 @@
       "StyleName": "defaultButtonStyle",
       "Type": "ControlInfo"
     },
-    "editar": {
+    "editar_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -1289,7 +1289,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "editar",
+      "Name": "editar_1",
       "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1417,7 +1417,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "entrada1": {
+    "entrada1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1520,7 +1520,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "entrada1",
+      "Name": "entrada1_1",
       "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -1733,7 +1733,7 @@
       "StyleName": "defaultTextStyle",
       "Type": "ControlInfo"
     },
-    "entrada2": {
+    "entrada2_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -1821,7 +1821,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "entrada2",
+      "Name": "entrada2_1",
       "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2029,7 +2029,7 @@
       "StyleName": "defaultTextStyle",
       "Type": "ControlInfo"
     },
-    "Icon5": {
+    "Icon5_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -2080,7 +2080,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Icon5",
+      "Name": "Icon5_1",
       "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2208,7 +2208,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "Saida1": {
+    "Saida1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2280,7 +2280,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Saida1",
+      "Name": "Saida1_1",
       "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2478,7 +2478,7 @@
       "StyleName": "defaultTextStyle",
       "Type": "ControlInfo"
     },
-    "seta1": {
+    "seta1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Icon",
@@ -2537,7 +2537,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "seta1",
+      "Name": "seta1_1",
       "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2670,7 +2670,7 @@
       "StyleName": "defaultIconStyle",
       "Type": "ControlInfo"
     },
-    "tela2": {
+    "tela2_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         {
@@ -2687,8 +2687,7 @@
         "Size",
         "Orientation",
         "LoadingSpinner",
-        "LoadingSpinnerColor",
-        "OnVisible"
+        "LoadingSpinnerColor"
       ],
       "IsAutoGenerated": false,
       "IsComponentDefinition": false,
@@ -2698,7 +2697,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "tela2",
+      "Name": "tela2_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -2741,17 +2740,12 @@
           "Category": "Design",
           "PropertyName": "Orientation",
           "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnVisible",
-          "RuleProviderType": "Unknown"
         }
       ],
       "StyleName": "defaultScreenStyle",
       "Type": "ControlInfo"
     },
-    "titulo1": {
+    "titulo1_1": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "Live",
@@ -2838,7 +2832,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "titulo1",
+      "Name": "titulo1_1",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
@@ -3042,5 +3036,5 @@
       "Type": "ControlInfo"
     }
   },
-  "TopParentName": "tela2"
+  "TopParentName": "tela2_1"
 }

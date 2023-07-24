@@ -12,6 +12,7 @@ tela1 As screen:
         ZIndex: =1
 
     menu As icon.Waffle:
+        Color: =RGBA(128, 128, 128, 1)
         Icon: =Icon.Waffle
         OnSelect: |-
             =UpdateContext({varMenu: !varMenu})
@@ -20,6 +21,7 @@ tela1 As screen:
         ZIndex: =2
 
     bt2 As button:
+        Fill: =RGBA(128, 128, 128, 1)
         Height: =70
         OnSelect: =Navigate(tela2)
         Size: =24
@@ -31,20 +33,24 @@ tela1 As screen:
         ZIndex: =3
 
     Button4 As button:
+        Fill: =RGBA(128, 128, 128, 1)
         Height: =70
         OnSelect: =Navigate(tela2_1)
         Size: =24
         Text: =t2_1
+        Visible: =varMenu
         Width: =280
         X: =285
         Y: =546
         ZIndex: =4
 
     Button5 As button:
+        Fill: =RGBA(128, 128, 128, 1)
         Height: =70
         OnSelect: =Navigate(tela2_2)
         Size: =24
         Text: =t2_2
+        Visible: =varMenu
         Width: =280
         X: =285
         Y: =678
