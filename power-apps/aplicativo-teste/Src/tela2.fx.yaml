@@ -7,7 +7,10 @@ tela2 As screen:
         Default: =varIn
         Height: =159
         Mode: =TextMode.MultiLine
+        OnChange: |-
+            =If(entrada1.Text="",UpdateContext({varIn: " Escreva Aqui..."}))
         Size: =21
+        Visible: =varEdit
         Width: =560
         X: =36
         Y: =855
@@ -28,10 +31,11 @@ tela2 As screen:
         Fill: =RGBA(54, 176, 75, 1)
         Height: =70
         OnSelect: |-
-            =UpdateContext({varOut:Concatenate(varOut,entrada1.Text,"
-            ")})
+            =If(varIn<> " Escreva Aqui...",UpdateContext({varOut:Concatenate(varOut,entrada1.Text,"
+            ")}))
         Size: =24
         Text: ="Adicionar"
+        Visible: =varEdit
         Width: =258
         X: =36
         Y: =1035
@@ -44,6 +48,7 @@ tela2 As screen:
             =UpdateContext({varOut:""})
         Size: =24
         Text: ="Deletar"
+        Visible: =varEdit
         Width: =258
         X: =338
         Y: =1035
@@ -53,16 +58,18 @@ tela2 As screen:
         Color: =RGBA(128, 128, 128, 0.53)
         OnSelect: |-
             =UpdateContext({varIn:Saida1.Text})
+        Visible: =varEdit
         X: =510
         Y: =747
         ZIndex: =5
 
-    Icon2 As icon.ArrowLeft:
+    apagarEntrada1 As icon.ArrowLeft:
         Color: =RGBA(128, 128, 128, 0.55)
         Height: =45
         Icon: =Icon.ArrowLeft
         OnSelect: |-
             =UpdateContext({varIn:""})
+        Visible: =varEdit
         Width: =39
         X: =535
         Y: =953
@@ -87,8 +94,46 @@ tela2 As screen:
         Height: =70
         Size: =40
         Text: =varTitulo
-        Width: =560
+        Width: =432
         X: =40
         Y: =40
         ZIndex: =8
+
+    celndario As icon.Calendar:
+        Color: =RGBA(128, 128, 128, 0.54)
+        Icon: =Icon.AddToCalendar
+        OnSelect: |-
+            =UpdateContext({varCalendar: !varCalendar})
+        Visible: =varEdit
+        X: =510
+        Y: =245
+        ZIndex: =9
+
+    calendario2 As datepicker:
+        EndYear: =2025
+        Height: =70
+        Size: =24
+        StartYear: =2020
+        Visible: =varCalendar&&varEdit
+        Width: =248
+        X: =326
+        Y: =322
+        ZIndex: =10
+
+    editar As icon.Edit:
+        Color: =RGBA(128, 128, 128, 1)
+        Icon: =Icon.Edit
+        OnSelect: |-
+            =UpdateContext({varEdit: !varEdit})
+        X: =522
+        Y: =136
+        ZIndex: =11
+
+    Icon5 As icon.BackArrow:
+        Color: =RGBA(128, 128, 128, 1)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(tela1)
+        X: =532
+        Y: =46
+        ZIndex: =12
 
