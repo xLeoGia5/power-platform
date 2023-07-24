@@ -151,3 +151,18 @@ tela1 As screen:
         Y: =498
         ZIndex: =10
 
+    dellDown As icon.ArrowDown:
+        Color: =RGBA(128, 128, 128, 1)
+        OnSelect: =Remove(tarefas,Last(tarefas))
+        X: =109
+        Y: =1041
+        ZIndex: =11
+
+    dellUp As icon.ArrowUp:
+        Color: =RGBA(128, 128, 128, 1)
+        Icon: =Icon.ArrowUp
+        OnSelect: =Remove(tarefas,First(tarefas))
+        X: =19
+        Y: =1041
+        ZIndex: =12
+
