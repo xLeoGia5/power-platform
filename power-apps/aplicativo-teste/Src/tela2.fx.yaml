@@ -134,7 +134,7 @@ tela2 As screen:
         Y: =136
         ZIndex: =11
 
-    Icon5 As icon.BackArrow:
+    voltar As icon.BackArrow:
         Color: =RGBA(128, 128, 128, 1)
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(tela1)

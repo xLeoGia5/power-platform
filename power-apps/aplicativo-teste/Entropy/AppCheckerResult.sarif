@@ -1060,19 +1060,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "tela2.Icon5.AccessibleLabel"
+                  "fullyQualifiedName": "tela2.voltar.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "tela2.Icon5.AccessibleLabel",
+                  "fullyQualifiedName": "tela2.voltar.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "tela2",
-                "type": "tela2.Icon5"
+                "type": "tela2.voltar"
               }
             }
           ],
@@ -1090,19 +1090,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "tela2.Icon5.TabIndex"
+                  "fullyQualifiedName": "tela2.voltar.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "tela2.Icon5.TabIndex",
+                  "fullyQualifiedName": "tela2.voltar.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "tela2",
-                "type": "tela2.Icon5"
+                "type": "tela2.voltar"
               }
             }
           ],
@@ -1540,19 +1540,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "tela2_2.Icon5_2.TabIndex"
+                  "fullyQualifiedName": "tela2_2.voltar_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "tela2_2.Icon5_2.TabIndex",
+                  "fullyQualifiedName": "tela2_2.voltar_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "tela2_2",
-                "type": "tela2_2.Icon5_2"
+                "type": "tela2_2.voltar_2"
               }
             }
           ],
@@ -1570,19 +1570,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "tela2_2.Icon5_2.AccessibleLabel"
+                  "fullyQualifiedName": "tela2_2.voltar_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "tela2_2.Icon5_2.AccessibleLabel",
+                  "fullyQualifiedName": "tela2_2.voltar_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "tela2_2",
-                "type": "tela2_2.Icon5_2"
+                "type": "tela2_2.voltar_2"
               }
             }
           ],
@@ -1960,19 +1960,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "tela2_1.Icon5_1.TabIndex"
+                  "fullyQualifiedName": "tela2_1.voltar_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "tela2_1.Icon5_1.TabIndex",
+                  "fullyQualifiedName": "tela2_1.voltar_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "tela2_1",
-                "type": "tela2_1.Icon5_1"
+                "type": "tela2_1.voltar_1"
               }
             }
           ],
@@ -1990,19 +1990,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "tela2_1.Icon5_1.AccessibleLabel"
+                  "fullyQualifiedName": "tela2_1.voltar_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "tela2_1.Icon5_1.AccessibleLabel",
+                  "fullyQualifiedName": "tela2_1.voltar_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "tela2_1",
-                "type": "tela2_1.Icon5_1"
+                "type": "tela2_1.voltar_1"
               }
             }
           ],
