@@ -20,6 +20,125 @@ tela1 As screen:
         Y: =50
         ZIndex: =2
 
+    "'Tabela 1' As dataTable.datatable":
+        BorderStyle: =BorderStyle.Solid
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        HeadingSize: =21
+        Height: =500
+        Items: =tarefas
+        Size: =21
+        Width: =640
+        X: =0
+        Y: =377
+        ZIndex: =3
+
+        Hora_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Hora"
+            FieldName: ="Hora"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Hora
+            Width: =178
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Tarefa_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Tarefa"
+            FieldName: ="Tarefa"
+            FieldVariantName: ="textualColumn"
+            Height: =559
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Tarefa
+            Width: =497
+            X: =138
+            Y: =0
+            ZIndex: =2
+
+    limpaTabela As icon.Trash:
+        Color: =RGBA(128, 128, 128, 1)
+        Icon: =Icon.Trash
+        OnSelect: |-
+            =ClearCollect(tarefas,
+            {Hora:"" ,Tarefa:""})
+        X: =535
+        Y: =313
+        ZIndex: =4
+
+    entradaT As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
+        Default: =varTarefa
+        Height: =70
+        OnChange: |-
+            =If(entradaT.Text= "", UpdateContext({varTarefa: " Insira uma tarefa..."}))
+        OnSelect: |-
+            =If(entradaT.Text= " Insira uma tarefa...", UpdateContext({varTarefa: ""}))
+        Size: =21
+        Width: =426
+        X: =192
+        Y: =954
+        ZIndex: =5
+
+    entradaHora As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
+        Default: =varHora
+        Height: =70
+        OnChange: |-
+            =If(entradaHora.Text= "",UpdateContext({varHora: "EX: 00:00"}))
+        OnSelect: |-
+            =If(entradaHora.Text= "EX: 00:00", UpdateContext({varHora: ""}))
+        Size: =21
+        Width: =154
+        X: =19
+        Y: =954
+        ZIndex: =6
+
+    addT As button:
+        Height: =70
+        OnSelect: |-
+            =Collect(tarefas,
+            {Hora:entradaHora.Text,Tarefa:entradaT.Text})
+        Size: =24
+        Text: ="Adicionar"
+        Width: =280
+        X: =319
+        Y: =1035
+        ZIndex: =7
+
+    bt4 As button:
+        Fill: =RGBA(128, 128, 128, 1)
+        Height: =70
+        OnSelect: =Navigate(tela2_2)
+        Size: =24
+        Text: =t2_2
+        Visible: =varMenu
+        Width: =280
+        X: =285
+        Y: =742
+        ZIndex: =8
+
+    bt3 As button:
+        Fill: =RGBA(128, 128, 128, 1)
+        Height: =70
+        OnSelect: =Navigate(tela2_1)
+        Size: =24
+        Text: =t2_1
+        Visible: =varMenu
+        Width: =280
+        X: =285
+        Y: =616
+        ZIndex: =9
+
     bt2 As button:
         Fill: =RGBA(128, 128, 128, 1)
         Height: =70
@@ -29,30 +148,6 @@ tela1 As screen:
         Visible: =varMenu
         Width: =280
         X: =285
-        Y: =417
-        ZIndex: =3
-
-    Button4 As button:
-        Fill: =RGBA(128, 128, 128, 1)
-        Height: =70
-        OnSelect: =Navigate(tela2_1)
-        Size: =24
-        Text: =t2_1
-        Visible: =varMenu
-        Width: =280
-        X: =285
-        Y: =546
-        ZIndex: =4
-
-    Button5 As button:
-        Fill: =RGBA(128, 128, 128, 1)
-        Height: =70
-        OnSelect: =Navigate(tela2_2)
-        Size: =24
-        Text: =t2_2
-        Visible: =varMenu
-        Width: =280
-        X: =285
-        Y: =678
-        ZIndex: =5
+        Y: =498
+        ZIndex: =10
 
