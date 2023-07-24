@@ -24,10 +24,12 @@ tela1 As screen:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
+        HeadingFill: =RGBA(128, 128, 128, 1)
         HeadingSize: =21
         Height: =500
         Items: =tarefas
         Size: =21
+        Visible: =true
         Width: =640
         X: =0
         Y: =377
@@ -59,7 +61,7 @@ tela1 As screen:
             Order: =2
             Text: =ThisItem.Tarefa
             Width: =497
-            X: =138
+            X: =146
             Y: =0
             ZIndex: =2
 
@@ -104,6 +106,7 @@ tela1 As screen:
         ZIndex: =6
 
     addT As button:
+        Fill: =RGBA(128, 128, 128, 1)
         Height: =70
         OnSelect: |-
             =Collect(tarefas,
@@ -166,7 +169,7 @@ tela1 As screen:
         Y: =1041
         ZIndex: =12
 
-    Label5 As label:
+    pendentes As label:
         FontWeight: =FontWeight.Bold
         Height: =70
         Size: =25
