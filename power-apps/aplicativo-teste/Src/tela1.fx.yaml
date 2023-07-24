@@ -45,7 +45,7 @@ tela1 As screen:
             LayoutHeight: =Parent.Height
             Order: =1
             Text: =ThisItem.Hora
-            Width: =158
+            Width: =134
             X: =0
             Y: =0
             ZIndex: =1
