@@ -1,2 +1,32 @@
 tela1 As screen:
+    Fill: =RGBA(237, 237, 237, 1)
+
+    "'hora&data' As label":
+        Align: =Align.Center
+        Height: =321
+        Size: =65
+        Text: =Now()
+        Width: =560
+        X: =39
+        Y: =96
+        ZIndex: =1
+
+    menu As icon.Waffle:
+        Icon: =Icon.Waffle
+        OnSelect: |-
+            =UpdateContext({varMenu: !varMenu})
+        X: =535
+        Y: =50
+        ZIndex: =2
+
+    Button3 As button:
+        Height: =70
+        OnSelect: =Navigate(tela2)
+        Size: =24
+        Text: ="Lista 1"
+        Visible: =varMenu
+        Width: =280
+        X: =285
+        Y: =417
+        ZIndex: =3
 
