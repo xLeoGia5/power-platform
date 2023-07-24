@@ -17,7 +17,7 @@ tela1 As screen:
         OnSelect: |-
             =UpdateContext({varMenu: !varMenu})
         X: =535
-        Y: =50
+        Y: =40
         ZIndex: =2
 
     "'Tabela 1' As dataTable.datatable":
@@ -43,13 +43,13 @@ tela1 As screen:
             LayoutHeight: =Parent.Height
             Order: =1
             Text: =ThisItem.Hora
-            Width: =178
+            Width: =158
             X: =0
             Y: =0
             ZIndex: =1
 
         Tarefa_Column1 As dataTableColumn.textualColumn:
-            AutoWidth: =false
+            AutoWidth: =true
             DisplayMode: =DisplayMode.Edit
             FieldDisplayName: ="Tarefa"
             FieldName: ="Tarefa"
@@ -68,7 +68,7 @@ tela1 As screen:
         Icon: =Icon.Trash
         OnSelect: |-
             =ClearCollect(tarefas,
-            {Hora:"" ,Tarefa:""})
+            {Hora:"",Tarefa:""})
         X: =535
         Y: =313
         ZIndex: =4
@@ -165,4 +165,15 @@ tela1 As screen:
         X: =19
         Y: =1041
         ZIndex: =12
+
+    Label5 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =70
+        Size: =25
+        Text: |-
+            =Concatenate("Tarefas pendentes: ",CountA(tarefas.Hora))
+        Width: =386
+        X: =40
+        Y: =40
+        ZIndex: =13
 
