@@ -61,6 +61,7 @@ tela2 As screen:
         Color: =RGBA(128, 128, 128, 0.53)
         OnSelect: |-
             =UpdateContext({varIn:Saida1.Text})
+        Tooltip: ="Copia o texto para a caixa de baixo"
         Visible: =varEdit
         X: =510
         Y: =747
@@ -72,6 +73,7 @@ tela2 As screen:
         Icon: =Icon.ArrowLeft
         OnSelect: |-
             =UpdateContext({varIn:""})
+        Tooltip: ="Limpa caixa de texto"
         Visible: =varEdit
         Width: =39
         X: =535
@@ -109,6 +111,7 @@ tela2 As screen:
         Icon: =Icon.AddToCalendar
         OnSelect: |-
             =UpdateContext({varCalendar: !varCalendar})
+        Tooltip: ="Exibe calendario"
         Visible: =varEdit
         X: =510
         Y: =245
@@ -130,6 +133,7 @@ tela2 As screen:
         Icon: =Icon.Edit
         OnSelect: |-
             =UpdateContext({varEdit: !varEdit})
+        Tooltip: ="Habilita a edição"
         X: =522
         Y: =136
         ZIndex: =11
@@ -138,6 +142,7 @@ tela2 As screen:
         Color: =RGBA(128, 128, 128, 1)
         Icon: =Icon.BackArrow
         OnSelect: =Navigate(tela1)
+        Tooltip: ="Volta a tela inicial"
         X: =532
         Y: =46
         ZIndex: =12

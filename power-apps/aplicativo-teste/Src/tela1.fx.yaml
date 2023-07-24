@@ -16,6 +16,7 @@ tela1 As screen:
         Icon: =Icon.Waffle
         OnSelect: |-
             =UpdateContext({varMenu: !varMenu})
+        Tooltip: ="Abre o menu"
         X: =535
         Y: =40
         ZIndex: =2
