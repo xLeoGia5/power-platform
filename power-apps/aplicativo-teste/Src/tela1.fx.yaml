@@ -170,13 +170,6 @@ tela1 As screen:
         Y: =40
         ZIndex: =13
 
-    editItem As icon.Edit:
-        Icon: =Icon.Edit
-        OnSelect: =
-        X: =201
-        Y: =1041
-        ZIndex: =14
-
     recarregar As icon.DockCheckProperties:
         Color: =RGBA(128, 128, 128, 1)
         Icon: =Icon.Reload
