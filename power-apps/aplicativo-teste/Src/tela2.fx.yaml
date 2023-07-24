@@ -9,6 +9,8 @@ tela2 As screen:
         Mode: =TextMode.MultiLine
         OnChange: |-
             =If(entrada1.Text="",UpdateContext({varIn: " Escreva Aqui..."}))
+        OnSelect: |-
+            =If(entrada1.Text= " Escreva Aqui...", UpdateContext({varIn: ""}))
         Size: =21
         Visible: =varEdit
         Width: =560
@@ -81,7 +83,9 @@ tela2 As screen:
         Default: =varIn2
         Height: =70
         OnChange: |-
-            =If(entrada2.Text="",UpdateContext({varTitulo: " Lista 1."})&& UpdateContext({varIn2: " Titulo aqui..."}),UpdateContext({varTitulo:entrada2.Text}))
+            =If(entrada2.Text="",UpdateContext({varTitulo: " Lista 1."})&& UpdateContext({varIn2: " Titulo aqui..."})&& Set(t2, " Lista 1"),UpdateContext({varTitulo:entrada2.Text}), UpdateContext({varIn2: entrada2.Text})&& Set(t2, varIn2))
+        OnSelect: |-
+            =If(entrada2.Text= " Titulo aqui...", UpdateContext({varIn2: ""}))
         Size: =21
         Width: =436
         X: =36

@@ -19,14 +19,34 @@ tela1 As screen:
         Y: =50
         ZIndex: =2
 
-    Button3 As button:
+    bt2 As button:
         Height: =70
         OnSelect: =Navigate(tela2)
         Size: =24
-        Text: ="Lista 1"
+        Text: =t2
         Visible: =varMenu
         Width: =280
         X: =285
         Y: =417
         ZIndex: =3
+
+    Button4 As button:
+        Height: =70
+        OnSelect: =Navigate(tela2_1)
+        Size: =24
+        Text: =t2_1
+        Width: =280
+        X: =285
+        Y: =546
+        ZIndex: =4
+
+    Button5 As button:
+        Height: =70
+        OnSelect: =Navigate(tela2_2)
+        Size: =24
+        Text: =t2_2
+        Width: =280
+        X: =285
+        Y: =678
+        ZIndex: =5
 
