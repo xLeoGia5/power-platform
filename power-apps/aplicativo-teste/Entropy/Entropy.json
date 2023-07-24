@@ -2,13 +2,18 @@
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
+    "Adicionar": 9,
     "App": 1,
+    "Deletar": 11,
+    "entrada1": 6,
     "Host": 3,
-    "Screen1": 4
+    "Saida1": 8,
+    "tela1": 4,
+    "tela2": 5
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/24/2023 16:07:34",
+  "HeaderLastSavedDateTimeUTC": "07/24/2023 16:18:36",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -20,25 +25,41 @@
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
-  "OrderXMLTemplate": {},
+  "OrderXMLTemplate": {
+    "button": 1,
+    "text": 0
+  },
   "OverridablePropertiesEntry": {
+    "Adicionar": {},
     "App": {},
+    "Deletar": {},
+    "entrada1": {},
     "Host": {},
-    "Screen1": {}
+    "Saida1": {},
+    "tela1": {},
+    "tela2": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
+    "Adicionar": 2,
     "App": 0,
+    "Deletar": 3,
+    "entrada1": 1,
     "Host": 0,
-    "Screen1": 0
+    "Saida1": 0,
+    "tela1": 0,
+    "tela2": 0
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0318087,
-    "ControlCount": {}
+    "ControlCount": {
+      "button": 1,
+      "screen": 1
+    }
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

@@ -1,0 +1,48 @@
+tela2 As screen:
+    Fill: =RGBA(237, 237, 237, 1)
+
+    entrada1 As text:
+        Default: =""
+        Height: =159
+        Size: =21
+        Width: =560
+        X: =36
+        Y: =852
+        ZIndex: =1
+
+    Saida1 As text:
+        Default: =varOut
+        DisplayMode: =DisplayMode.View
+        Height: =609
+        Mode: =TextMode.MultiLine
+        Size: =21
+        Width: =560
+        X: =36
+        Y: =228
+        ZIndex: =2
+
+    Adicionar As button:
+        Fill: =RGBA(54, 176, 75, 1)
+        Height: =70
+        OnSelect: |-
+            =UpdateContext({varOut:Concatenate(varOut,entrada1.Text,"
+            ")})
+        Size: =24
+        Text: ="Adicionar"
+        Width: =258
+        X: =36
+        Y: =1035
+        ZIndex: =3
+
+    Deletar As button:
+        Fill: =RGBA(255, 0, 0, 1)
+        Height: =70
+        OnSelect: |-
+            =UpdateContext({varOut:""})
+        Size: =24
+        Text: ="Deletar"
+        Width: =258
+        X: =338
+        Y: =1035
+        ZIndex: =4
+

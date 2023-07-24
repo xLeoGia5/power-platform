@@ -131,6 +131,7 @@
     "UserLocale": "pt-BR"
   },
   "ScreenOrder": [
-    "Screen1"
+    "tela1",
+    "tela2"
   ]
 }
