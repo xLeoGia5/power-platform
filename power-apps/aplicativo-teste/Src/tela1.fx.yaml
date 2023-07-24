@@ -86,7 +86,7 @@ tela1 As screen:
         Default: =varHora
         Height: =70
         OnChange: |-
-            =If(entradaHora.Text= "",UpdateContext({varHora: "EX: 00:00"}))
+            =If(entradaHora.Text="", UpdateContext({varHora:"00:00"}))
         OnSelect: |-
             =If(entradaHora.Text= "EX: 00:00", UpdateContext({varHora: ""}))
         Size: =21
