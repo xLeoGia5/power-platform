@@ -27,7 +27,7 @@ tela1 As screen:
         HeadingFill: =RGBA(128, 128, 128, 1)
         HeadingSize: =21
         Height: =500
-        Items: =tarefas
+        Items: =Sort(tarefas,Hora)
         Size: =21
         Visible: =true
         Width: =640
