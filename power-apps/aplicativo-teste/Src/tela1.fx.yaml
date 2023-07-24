@@ -20,7 +20,7 @@ tela1 As screen:
         Y: =40
         ZIndex: =2
 
-    "'Tabela 1' As dataTable.datatable":
+    Tabela1 As dataTable.datatable:
         BorderStyle: =BorderStyle.Solid
         DisplayMode: =DisplayMode.Edit
         Fill: =RGBA(0, 0, 0, 0)
@@ -180,4 +180,12 @@ tela1 As screen:
         X: =535
         Y: =313
         ZIndex: =15
+
+    Icon12 As icon.Trash:
+        Color: =RGBA(128, 128, 128, 1)
+        Icon: =Icon.Trash
+        OnSelect: =Remove(tarefas,Tabela1.Selected)
+        X: =192
+        Y: =1041
+        ZIndex: =16
 
