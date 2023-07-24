@@ -65,16 +65,6 @@ tela1 As screen:
             Y: =0
             ZIndex: =2
 
-    limpaTabela As icon.Trash:
-        Color: =RGBA(128, 128, 128, 1)
-        Icon: =Icon.Trash
-        OnSelect: |-
-            =ClearCollect(tarefas,
-            {Hora:"",Tarefa:""})
-        X: =535
-        Y: =313
-        ZIndex: =4
-
     entradaT As text:
         BorderColor: =RGBA(128, 128, 128, 1)
         BorderThickness: =5
@@ -179,4 +169,22 @@ tela1 As screen:
         X: =40
         Y: =40
         ZIndex: =13
+
+    editItem As icon.Edit:
+        Icon: =Icon.Edit
+        OnSelect: =
+        X: =201
+        Y: =1041
+        ZIndex: =14
+
+    recarregar As icon.DockCheckProperties:
+        Color: =RGBA(128, 128, 128, 1)
+        Icon: =Icon.Reload
+        OnSelect: |-
+            =ClearCollect(tarefas,
+            {Hora:"",Tarefa:""})
+        Width: =50
+        X: =535
+        Y: =313
+        ZIndex: =15
 
