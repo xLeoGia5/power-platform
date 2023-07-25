@@ -65,7 +65,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/25/2023 00:44:45",
+  "HeaderLastSavedDateTimeUTC": "07/25/2023 00:56:35",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -222,14 +222,14 @@
   "VolatileProperties": {
     "AnalysisLoadTime": 0.3410036,
     "ControlCount": {
-      "button": 20,
+      "button": 22,
       "dataTable": 1,
       "dataTableColumn": 2,
-      "datepicker": 8,
-      "icon": 45,
-      "label": 10,
-      "screen": 9,
-      "text": 26
+      "datepicker": 9,
+      "icon": 50,
+      "label": 11,
+      "screen": 10,
+      "text": 29
     },
     "DeserializationLoadTime": 0.8171537
   },
