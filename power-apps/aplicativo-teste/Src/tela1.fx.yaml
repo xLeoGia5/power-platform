@@ -66,45 +66,12 @@ tela1 As screen:
             Y: =0
             ZIndex: =2
 
-    entradaT As text:
-        BorderColor: =RGBA(128, 128, 128, 1)
-        BorderThickness: =5
-        Default: =varTarefa
-        Height: =70
-        HintText: =" Insira uma tarefa..."
-        OnChange: |-
-            =If(entradaT.Text= "", UpdateContext({varTarefa: " Insira uma tarefa..."}))
-        OnSelect: |-
-            =If(entradaT.Text= " Insira uma tarefa...", UpdateContext({varTarefa: ""}))
-        Size: =21
-        Width: =426
-        X: =11
-        Y: =953
-        ZIndex: =5
-
-    entradaHora As text:
-        BorderColor: =RGBA(128, 128, 128, 1)
-        BorderThickness: =5
-        Default: =varHora
-        Height: =70
-        HintText: ="Horas"
-        OnChange: |-
-            =If(entradaHora.Text="", UpdateContext({varHora:"00:00"}))
-        OnSelect: |-
-            =If(entradaHora.Text= "EX: 00:00", UpdateContext({varHora: ""}))
-        Size: =21
-        Tooltip: ="Insira o horário..."
-        Width: =154
-        X: =20
-        Y: =848
-        ZIndex: =6
-
     addT As button:
         Fill: =RGBA(128, 128, 128, 1)
         Height: =70
         OnSelect: |-
-            =Collect(tarefas,
-            {Hora:entradaHora.Text,Tarefa:entradaT.Text})
+            =If(entradaT.Text<>""&& horarios.Selected.Value<>Blank(), Collect(tarefas,
+            {Hora:horarios.Selected.Value,Tarefa:entradaT.Text}))
         Size: =24
         Text: ="Adicionar"
         Tooltip: ="Adiciona tarefa"
@@ -198,28 +165,38 @@ tela1 As screen:
         Y: =1041
         ZIndex: =16
 
-    horarios As combobox:
-        ChevronBackground: =RGBA(128, 128, 128, 1)
-        Height: =75
-        Items: =ComboBoxSample
-        SearchItems: =Search(ComboBoxSample,horarios.SearchText,"Value1")
-        SelectionColor: =RGBA(0, 0, 0, 1)
-        SelectionFill: =RGBA(128, 128, 128, 1)
-        SelectMultiple: =false
-        Size: =21
-        Width: =166
-        X: =454
-        Y: =950
-        ZIndex: =18
-
-    Checkbox2 As checkbox:
+    checkPm As checkbox:
         CheckboxBorderColor: =RGBA(128, 128, 128, 1)
         FontWeight: =FontWeight.Semibold
         Height: =85
+        OnCheck: |-
+            =UpdateContext({varPm: true})
+        OnUncheck: |-
+            =UpdateContext({varPm: false})
         Size: =21
         Text: ="PM"
         Width: =122
-        X: =498
-        Y: =1033
+        X: =499
+        Y: =1041
         ZIndex: =19
+
+    horarios As combobox:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
+        ChevronBackground: =RGBA(128, 128, 128, 1)
+        DisplayFields: =["Value"]
+        Height: =85
+        InputTextPlaceholder: ="Horas"
+        Items: |-
+            =If(varPm=false,["00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00"],["12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"])
+        NoSelectionText: ="Horas"
+        SearchFields: =["Value"]
+        SearchItems: |-
+            =Search(If(varPm=false,["00:00","01:00","02:00","03:00","04:00","05:00","06:00","07:00","08:00","09:00","10:00","11:00"],["12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00"]),horarios.SearchText,"Value")
+        SelectMultiple: =false
+        Size: =21
+        Width: =174
+        X: =454
+        Y: =945
+        ZIndex: =20
 
