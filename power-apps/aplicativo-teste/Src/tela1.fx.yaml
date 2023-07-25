@@ -42,7 +42,7 @@ tela1 As screen:
             FieldDisplayName: ="Hora"
             FieldName: ="Hora"
             FieldVariantName: ="textualColumn"
-            Height: =Parent.Height
+            Height: =559
             LayoutHeight: =Parent.Height
             Order: =1
             Text: =ThisItem.Hora
