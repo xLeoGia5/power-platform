@@ -76,8 +76,8 @@ tela1 As screen:
         Text: ="Adicionar"
         Tooltip: ="Adiciona tarefa"
         Width: =280
-        X: =203
-        Y: =1041
+        X: =157
+        Y: =1061
         ZIndex: =7
 
     bt4 As button:
@@ -120,8 +120,8 @@ tela1 As screen:
         Color: =RGBA(128, 128, 128, 1)
         OnSelect: =Remove(tarefas,Last(tarefas))
         Tooltip: ="Deleta a ultima linha"
-        X: =75
-        Y: =1041
+        X: =501
+        Y: =1057
         ZIndex: =11
 
     dellUp As icon.ArrowUp:
@@ -129,8 +129,8 @@ tela1 As screen:
         Icon: =Icon.ArrowUp
         OnSelect: =Remove(tarefas,First(tarefas))
         Tooltip: ="Deleta a primeira linha"
-        X: =11
-        Y: =1041
+        X: =437
+        Y: =1057
         ZIndex: =12
 
     pendentes As label:
@@ -161,8 +161,8 @@ tela1 As screen:
         Icon: =Icon.Trash
         OnSelect: =Remove(tarefas,Tabela1.Selected)
         Tooltip: ="Deleta a linha selecionada"
-        X: =139
-        Y: =1041
+        X: =565
+        Y: =1057
         ZIndex: =16
 
     checkPm As checkbox:
@@ -176,8 +176,8 @@ tela1 As screen:
         Size: =21
         Text: ="PM"
         Width: =122
-        X: =499
-        Y: =1041
+        X: =20
+        Y: =1046
         ZIndex: =19
 
     horarios As combobox:
@@ -196,7 +196,20 @@ tela1 As screen:
         SelectMultiple: =false
         Size: =21
         Width: =174
-        X: =454
-        Y: =945
+        X: =20
+        Y: =959
         ZIndex: =20
+
+    entradaT As text:
+        BorderColor: =RGBA(128, 128, 128, 1)
+        BorderThickness: =5
+        Default: =""
+        Height: =70
+        HintText: ="Insira uma tarefa"
+        Mode: =TextMode.MultiLine
+        Size: =21
+        Width: =426
+        X: =203
+        Y: =967
+        ZIndex: =21
 
