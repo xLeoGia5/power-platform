@@ -94,7 +94,7 @@
       "useguiddatatypes": true,
       "usenonblockingonstartrule": true,
       "webbarcodescanner": false,
-      "zeroalltabindexes": true
+      "zeroalltabindexes": false
     },
     "Author": "",
     "BindingErrorCount": 0,
@@ -113,7 +113,7 @@
     "Id": "a6da4400-1285-4e55-a440-dedc15d98501",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "aplicativo-teste",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,

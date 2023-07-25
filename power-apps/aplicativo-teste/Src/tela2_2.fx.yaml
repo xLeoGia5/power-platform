@@ -6,6 +6,7 @@ tela2_2 As screen:
         BorderThickness: =5
         Default: =varIn
         Height: =159
+        HintText: =" Escreva aqui..."
         Mode: =TextMode.MultiLine
         OnChange: |-
             =If(entrada1_2.Text="",UpdateContext({varIn: " Escreva Aqui..."}))
@@ -82,6 +83,7 @@ tela2_2 As screen:
         BorderThickness: =5
         Default: =varIn2
         Height: =70
+        HintText: =" Titulo aqui..."
         OnChange: |-
             =If(entrada2_2.Text="",UpdateContext({varTitulo: " Lista 3."})&& UpdateContext({varIn2: " Titulo aqui..."})&& Set(t2_2, " Lista 3"),UpdateContext({varTitulo:entrada2_2.Text}), UpdateContext({varIn2: entrada2_2.Text})&& Set(t2_2, varIn2))
         OnSelect: |-
